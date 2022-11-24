@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS HANDSON 4</h1>
+    <p>Find the Product.
+        Write a program that takes an array as input from the user and find out the product of the elements.</p>
+    <pre>
+        const Find_Prod = (array, N) => 
+        {
+         let pro=1;
+         for(let i =0; i < N; i++){
+           pro = pro * array[i]
+         }
+         return pro;
+             
+        
+        };
+         
+        </pre>
+    <p>Find the Sum.
+        Write a program which takes an array as input from the user and find out the sum of the array elements.</p>
+    <pre>
+        const Find_Sum = (array, N) => 
+        {
+           var sum = 0;
+          for (var i = 0; i < array.length; i++) {
+            if(typeof array[i] == `number`) sum += array[i];
+          }
+          return sum
+        
+        };
+         
+        </pre> 
+    <p>Count Occurrences
+        You are given an array 
+        A
+         containing 
+        N
+         integer elements and an integer 
+        K
+        , and your task is to return the count of occurrences of 
+        K
+         in array 
+        A
+        .</p> 
+    <pre>
+        const findCount = (N, K, Arr) => 
+        {
+          let count = 0;
+          for(let i =0; i < Arr.length; i++){
+            if(Arr[i] === K){
+              count++;
+            }
+          }
+          return count;
+        };
+         
+        </pre>
+    <p>Even Odd
+        You are given an array 
+        A
+         containing 
+        N
+         integer elements, and your task is to return an array 
+        B
+         
+        (
+        having a size equal to 
+        2
+        )
+        , where 
+        B
+        [
+        0
+        ]
+         contains the sum of all even elements of array A and 
+        B
+        [
+        1
+        ]
+         has the sum of all odd elements of the array 
+        A
+        .</p>  
+        <pre>
+            const findEvenOdd = (N, Arr) => 
+            {
+              const B =[0,0];
+              for(let i=0; i < Arr.length; i++){
+                if(Arr[i]%2 === 0){
+                  B[0] = B[0] + parseInt(Arr[i]);
+                }
+                else{
+                  B[1] = B[1] + parseInt(Arr[i]);
+                }
+              }
+              return B;
+            };
+             
+            </pre>
+    <p></p>                    
+</body>
+</html>
